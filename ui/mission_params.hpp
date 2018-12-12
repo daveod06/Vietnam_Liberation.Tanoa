@@ -1,5 +1,44 @@
 class Params
 {
+	class Param_UseCustomDate {
+		title="Use Custom Date (usually for guaranteed full moon)";
+		values[] = {0,1};
+		texts[] = {"Use mission managed date","Use custom date"};
+		default = 0;
+	};
+	class Param_Grass
+	{	
+		title="Grass Visibility (setTerrainGrid)";
+        // Low = 50 (NoGrass)
+        // Standard = 25
+        // High = 12.5
+        // Very High = 6.25
+        // Ultra = 3.125
+		values[]={16,8,4,2,1};
+		texts[]={"No Grass", "Proximity", "Normal", "Far", "Very Far"};
+		default = 2;
+	};
+    class Param_ViewDistance
+	{	
+		title="View Distance (setViewDistance)";
+		values[]={2000,4000,6000,10000};
+		texts[]={"Close", "Normal", "Far", "Very Far"};
+		default = 2000;
+	};
+    class Param_ObjectViewDistance
+	{	
+		title="Object View Distance + Shadow Draw Distance (setObjectViewDistance)";
+		values[]={1000, 1750, 2500,4000,5000};
+		texts[]={"Super Close", "Close", "Normal", "Far", "Very Far"};
+		default = 1750;
+	};
+    class Param_DetailBlend
+	{	
+		title="Detail Blend Distance (setDetailMapBlendPars)";
+		values[]={12,25,50,100,200};
+		texts[]={"Super Close","Close", "Normal", "Far", "Very Far"};
+		default = 12;
+	};
 	class LoadSaveParams {
 		title = $STR_PARAMS_LOADSAVEPARAMS;
 		values[] = { 0, 1, 2 };

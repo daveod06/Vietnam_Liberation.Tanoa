@@ -20,13 +20,20 @@ if (!isDedicated && !hasInterface && isMultiplayer) then {
 	execVM "scripts\server\offloading\hc_manager.sqf";
 };
 
-if (!isDedicated && hasInterface) then {
-	waitUntil {alive player};
-	if (debug_source != name player) then {debug_source = name player};
-	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
-} else {
-	setViewDistance 1600;
-};
+//if (!isDedicated && hasInterface) then {
+//	waitUntil {alive player};
+//	if (debug_source != name player) then {debug_source = name player};
+//	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
+//} else {
+//	setViewDistance 1600;
+//};
+
+// Custom Stuff
+setTerrainGrid (Param_Grass);
+setViewDistance (Param_ViewDistance);
+setObjectViewDistance [Param_ObjectViewDistance,Param_ObjectViewDistance*0.05];
+setDetailMapBlendPars [Param_DetailBlend,Param_DetailBlend*1.5];
+
 
 // Execute fnc_reviveInit again (by default it executes in postInit)
 if ((isNil {player getVariable "bis_revive_ehHandleHeal"} || isDedicated) && !(bis_reviveParam_mode == 0)) then {
