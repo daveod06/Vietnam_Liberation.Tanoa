@@ -1,3 +1,25 @@
+#include "include\functions.hpp"
+#include "Scripts\outlw_magRepack\MagRepack_config.hpp"
+
+/* Settings from Escape
+
+Respawn = "INSTANT";
+RespawnDelay = 60;
+respawnButton = 0;
+
+disabledAI = 1;
+enableDebugConsole = 1;
+
+corpseLimit = 30;
+corpseRemovalMinTime = 600;
+corpseRemovalMaxTime = 1800; //seconds
+
+wreckLimit = 10;
+wreckRemovalMinTime = 600; //seconds
+wreckRemovalMaxTime = 1800; //seconds
+
+*/
+
 respawn = 3;
 respawndelay = 5;
 respawnButton = 1;

@@ -29,7 +29,7 @@ if (!isDedicated && !hasInterface && isMultiplayer) then {
 //};
 
 // Custom Stuff
-setTerrainGrid (Param_Grass);
+setTerrainGrid (Param_Grass*3.125);
 setViewDistance (Param_ViewDistance);
 setObjectViewDistance [Param_ObjectViewDistance,Param_ObjectViewDistance*0.05];
 setDetailMapBlendPars [Param_DetailBlend,Param_DetailBlend*1.5];

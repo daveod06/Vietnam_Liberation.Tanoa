@@ -1,19 +1,21 @@
 diag_log format["initPlayerLocal run for %1 (prewaituntil)", name player];
-
+if (!hasInterface || isDedicated) exitWith {};
 waituntil{!isNull(player)};
+params ["_player", "_didJIP"];
+
 //Clientside Stuff
 //call compile preprocessFile "Revive\reviveInit.sqf";
 
 diag_log format["initPlayerLocal run for %1", name player];
 
-/* FIXME
+/* From Escape
 
 [] spawn {
 	disableSerialization;
 	waitUntil {!isNull(findDisplay 46)};
 	(findDisplay 46) displayAddEventHandler ["keyDown", "_this call a3e_fnc_KeyDown"];
 };
-titleText ["Loading...", "BLACK",0.1];
+//titleText ["Loading...", "BLACK",0.1];
 
 AT_Revive_StaticRespawns = [];
 AT_Revive_enableRespawn = false;
@@ -21,11 +23,29 @@ AT_Revive_clearedDistance = 0;
 AT_Revive_Camera = 1;
 
 
-call ATR_FNC_ReviveInit;
+call ATR_FNC_ReviveInit; // 
 
 [] call A3E_fnc_addUserActions;
 
 */
+
+
+// reduce damage
+_player removeAllEventHandlers "HandleDamage";
+_player removeAllEventHandlers "Killed";
+_player addEventHandler ["HandleDamage", DJORevive_fnc_HandleDamageCustom];
+
+// Start saving player loadout periodically
+[] spawn {
+	while {true} do {
+		sleep 5;
+		if (alive _player) then {
+			_player setVariable ["respawnLoadout", getUnitLoadout _player]; 
+		};
+	};
+};
+
+
 
 // stamina stuff
 player setFatigue 0.0;
@@ -102,7 +122,7 @@ if(hmd player != "") then {
 	player unlinkItem _hmd;
 };
 
-player addeventhandler["HandleRating","_this call A3E_FNC_handleRating;"];
+// player addeventhandler["HandleRating","_this call A3E_FNC_handleRating;"]; // FIXME???
 
 0 = [] spawn
 {
@@ -112,4 +132,8 @@ player addeventhandler["HandleRating","_this call A3E_FNC_handleRating;"];
         player enableStamina false;
         sleep 5.0;
     };
+};
+
+if (Param_Magrepack == 1) then {
+	[] execVM "Scripts\outlw_magRepack\MagRepack_init_sv.sqf";
 };
