@@ -65,11 +65,16 @@ GRLIB_arsenal_items = [
     "UNS_M1_7_baby",
     "G_Spectacles_Tinted",
     "UNS_ARMY_BDU_USMC67Dirtyipatch",
-    "" // FIXME
+    "UNS_ARMY_BDU", // FIXME,
+    "UNS_SEAL_BDU_TS",
+    "rhsgref_uniform_tigerstripe",
+    "H_Booniehat_oli",
+    "UNS_Headband_OD",
+    "rhsgref_helmet_M1_painted_alt01",
+    "rhsgref_helmet_M1_bare_alt01"
 ];
 
 GRLIB_arsenal_backpacks = [
 	"B_Parachute",
-    "rhssaf_alice_smb",
-    "" // FIXME
+    "rhssaf_alice_smb"
 ];
