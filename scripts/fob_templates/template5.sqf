@@ -1,6 +1,6 @@
 _objects_to_build = [
 [ "Land_HelipadCircle_F", [-1.31, 11.44, 0], 0 ],
-[ opfor_transport_helo, [-1.31, 11.45, 0], 134.19 ],
+//[ opfor_transport_helo, [-1.31, 11.45, 0], 134.19 ], // FIXME - removed chopper
 [ "Land_Cargo_Patrol_V3_F", [17.36, 1.08, 0], 269.81 ],
 [ "Land_Cargo_House_V3_F", [15.93, -7.13, 0], 90.12 ],
 [ "Land_Cargo_HQ_V3_F", [-11.82, -13.91, 0], 89.97 ],

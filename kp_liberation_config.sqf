@@ -17,7 +17,8 @@ KP_liberation_medical_vehicles = [
 	"RHS_UH60M_MEV_d",
 	"RHS_UH60M_MEV2_d",
 	"UK3CB_BAF_LandRover_Amb_FFR_Green_A_MTP",
-	"UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM"
+	"UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM",
+    "uns_M577_amb"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
@@ -42,7 +43,7 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 7 = RHS USAF (Desert)
 8 = RHS AFRF (VDV/MSV)
 9 = UNSUNG US */
-KP_liberation_preset_blufor = 1;
+KP_liberation_preset_blufor = 9;
 
 /* OPFOR preset:
 0 = Custom (default vanilla CSAT)

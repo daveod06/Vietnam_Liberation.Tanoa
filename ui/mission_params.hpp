@@ -53,6 +53,13 @@ class Params
 		texts[]={"Disabled", "Enabled"};
 		default = 0;
 	};
+    class Param_OpforAircraft
+	{
+		title="OPFOR Can Use Aircraft";
+		values[]={0,1};
+		texts[]={"Disabled", "Enabled"};
+		default = 1;
+	};
 	class LoadSaveParams {
 		title = $STR_PARAMS_LOADSAVEPARAMS;
 		values[] = { 0, 1, 2 };

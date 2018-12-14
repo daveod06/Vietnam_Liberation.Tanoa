@@ -15,7 +15,7 @@ GRLIB_arsenal_weapons = [
     "hlc_rifle_Colt727",
     "rhs_weap_rsp30_white",
     "uns_MX991_m1911_base",
-    "uns_m1911",
+    "uns_m1911", // FIXME?
     "uns_mkvFlarePistol"
 ];
 
@@ -71,7 +71,8 @@ GRLIB_arsenal_items = [
     "H_Booniehat_oli",
     "UNS_Headband_OD",
     "rhsgref_helmet_M1_painted_alt01",
-    "rhsgref_helmet_M1_bare_alt01"
+    "rhsgref_helmet_M1_bare_alt01",
+    "G_Aviator"
 ];
 
 GRLIB_arsenal_backpacks = [

@@ -1,7 +1,8 @@
 import re
 
-fname='mission.sqm'
-prefixes = ['type="C_','type="LOP_','type="lop_']
+fname='classnames.txt'
+#prefixes = ['type="C_','type="UNS_','type="uns_','type="pook_','type="POOK_','type="CSJ_']
+prefixes = ['type="C_','type="UNS_','type="uns_','type="pook_','type="POOK_','type="CSJ_']
 classes = []
 
 with open(fname) as f:
