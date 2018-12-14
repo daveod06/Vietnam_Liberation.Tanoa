@@ -70,6 +70,17 @@ if(isServer) then {
 	GET_PARAM_BOOL(GRLIB_blufor_defenders, "BluforDefenders", 1);
 	GET_PARAM_BOOL(GRLIB_autodanger, "Autodanger", 0);
 
+    // Custom shit
+    GET_PARAM(TOOTH_Param_UseCustomDate, "Param_UseCustomDate", 0);
+    GET_PARAM(TOOTH_Param_Grass, "Param_Grass", 2);
+    GET_PARAM(TOOTH_Param_ViewDistance, "Param_ViewDistance", 2000);
+    GET_PARAM(TOOTH_Param_ObjectViewDistance, "Param_ObjectViewDistance", 1750);
+    GET_PARAM(TOOTH_Param_DetailBlend, "Param_DetailBlend", 12);
+    GET_PARAM(TOOTH_Param_Magrepack, "Param_Magrepack", 1);
+    GET_PARAM(TOOTH_TOOTH_Param_OpforChoppers, "Param_OpforChoppers", 0);
+    GET_PARAM(TOOTH_TOOTH_Param_OpforAircraft, "Param_OpforAircraft", 1);
+
+
 	GREUH_allow_mapmarkers = KP_liberation_mapmarkers; publicVariable "GREUH_allow_mapmarkers";
 	GREUH_allow_platoonview = KP_liberation_mapmarkers; publicVariable "GREUH_allow_platoonview";
 

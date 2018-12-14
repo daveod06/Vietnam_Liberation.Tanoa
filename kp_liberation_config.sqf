@@ -51,7 +51,7 @@ KP_liberation_preset_blufor = 9;
 2 = RHS AFRF (EMR/MSV)
 3 = Project OPFOR (Takistan)
 4 = Project OPFOR (Islamic State)
-5 = Project OPFOR (S = Project OPFOR (Sahrani)
+5 = Project OPFOR Project OPFOR (Sahrani)
 6 = UNSUNG NVA */
 KP_liberation_preset_opfor = 6;
 

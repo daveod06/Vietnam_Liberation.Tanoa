@@ -1,7 +1,8 @@
+/*
 #include "include\functions.hpp"
 #include "Scripts\outlw_magRepack\MagRepack_config.hpp"
 
-/* Settings from Escape
+// Settings from Escape
 
 Respawn = "INSTANT";
 RespawnDelay = 60;
@@ -19,6 +20,8 @@ wreckRemovalMinTime = 600; //seconds
 wreckRemovalMaxTime = 1800; //seconds
 
 */
+
+#include "Scripts\outlw_magRepack\MagRepack_config.hpp"
 
 respawn = 3;
 respawndelay = 5;

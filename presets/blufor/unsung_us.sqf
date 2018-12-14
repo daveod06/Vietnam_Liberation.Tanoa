@@ -89,8 +89,8 @@ heavy_vehicles = [
 	["uns_M113_M2",200,60,100],							                //M113 (M2)
 	["uns_M577_amb",200,0,100],							                //M113 (Medical)
 	["uns_m551",300,200,150],										    //M551 Sheridan
-	["uns_m48a3",300,250,175]									        //M48 Patton
-	["uns_m110sp",300,250,175]									        //M110 SP Gun
+	["uns_m48a3",300,250,175],									        //M48 Patton
+	["uns_m110sp",300,250,175],									        //M110 SP Gun
 	["uns_m107sp",300,250,175]									        //M107 SP Gun
 ];
 
